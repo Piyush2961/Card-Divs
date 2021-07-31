@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-decoration: underline;
+        }
+   .First, .Second, .Third, .Fourth{
+       background-color: red;
+       border: 1px solid black;
+       width: 23.2%;
+       height: 200px;
+       position: relative;
+       display: inline-block;
+       margin: 2px;
+       align-items: center;
+   }
+   .main{
+    box-sizing: border-box;
+       margin: auto;
+       border: 2px solid blue;
+       width: 90%;
+       padding: 10px;
+       margin-top: 50px;
+   }
+   
+   @media screen and (max-width:500px) {
+
+       .First, .Second, .Third, .Fourth{
+           width: 100%;
+       }
+   }
+   @media screen and (max-width:800px) and (min-width: 700px) {
+
+       .First, .Second, .Third, .Fourth{
+           width: 30%;
+       }
+   }
+   @media screen and (max-width:699px) and (min-width: 500px) {
+
+.First, .Second, .Third, .Fourth{
+    width: 48%;
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <h1><u>Responsive Card Div's</u></h1>
+ <div class="main">
+    <div class="First">
+    </div>
+    <div class="Second">
+    </div>
+    <div class="Third">
+    </div>
+    <div class="Fourth">
+    </div>
+</div>
+</body>
+</html>
